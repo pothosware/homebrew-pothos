@@ -1,9 +1,8 @@
-require 'formula'
-
 class Bladerf < Formula
   homepage 'http://nuand.com/'
   head 'https://github.com/Nuand/bladeRF.git'
 
+  depends_on "pkg-config" => :build
   depends_on 'cmake' => :build
   depends_on 'libusb'
 
