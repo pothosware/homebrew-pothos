@@ -30,7 +30,7 @@ class Qwtqt5 < Formula
     #if ENV.compiler == :clang && MacOS.version >= :mavericks
     #  args << "unsupported/macx-clang-libc++"
     #else
-    args << "macx-g++"
+    args << "macx-clang"
     #end
 
     if build.with? "qwtmathml"
@@ -44,7 +44,7 @@ class Qwtqt5 < Formula
 
     # symlink Qt Designer plugin (note: not removed on qwt formula uninstall)
     ln_sf prefix/"plugins/designer/libqwt_designer_plugin.dylib",
-          Formula["qt"].opt_prefix/"plugins/designer/" if build.with? "plugin"
+          Formula["qt5"].opt_prefix/"plugins/designer/" if build.with? "plugin"
   end
 
   def caveats
