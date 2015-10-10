@@ -3,6 +3,7 @@ class Soapyrtlsdr < Formula
   head "https://github.com/pothosware/SoapyRTLSDR.git"
 
   depends_on "cmake" => :build
+  depends_on "soapysdr"
   depends_on "librtlsdr"
 
   def install

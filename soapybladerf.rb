@@ -3,6 +3,7 @@ class Soapybladerf < Formula
   head "https://github.com/pothosware/SoapyBladeRF.git"
 
   depends_on "cmake" => :build
+  depends_on "soapysdr"
   depends_on "bladerf"
 
   def install

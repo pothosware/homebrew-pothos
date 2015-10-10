@@ -3,6 +3,7 @@ class Soapyhackrf < Formula
   head "https://github.com/pothosware/SoapyHackRF.git"
 
   depends_on "cmake" => :build
+  depends_on "soapysdr"
   depends_on "hackrf"
 
   def install
