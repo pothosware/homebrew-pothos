@@ -3,9 +3,6 @@
 This repository contains Homebrew formulas for
 Pothos, SoapySDR, support modules and toolkits.
 
-## Use this Homebrew
+## Documentation
 
-```
-brew tap pothosware/homebrew-pothos
-brew install NameOfFormula
-```
+https://github.com/pothosware/homebrew-pothos/wiki
