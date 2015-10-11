@@ -3,6 +3,7 @@ class Soapysdr < Formula
   homepage "https://github.com/pothosware/SoapySDR/wiki"
   head "https://github.com/pothosware/SoapySDR.git"
   url "https://github.com/pothosware/SoapySDR/archive/soapy-sdr-0.3.0.tar.gz"
+  sha256 "8a0c2b7bf0f5dbe55d8f99f2f73e734e03f01f4d40307cd1da70575a4d2763b7"
 
   depends_on "cmake" => :build
   depends_on "swig" => :build
