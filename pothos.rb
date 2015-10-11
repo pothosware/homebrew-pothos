@@ -1,4 +1,5 @@
 class Pothos < Formula
+  desc "Pothos data-flow software suite"
   homepage "https://github.com/pothosware/pothos/wiki"
   head "https://github.com/pothosware/pothos.git"
 
