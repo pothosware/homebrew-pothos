@@ -1,6 +1,7 @@
 class Bladerf < Formula
   homepage 'http://nuand.com/'
   head 'https://github.com/Nuand/bladeRF.git'
+  url "https://github.com/Nuand/bladeRF/archive/2015.07.tar.gz"
 
   depends_on "pkg-config" => :build
   depends_on 'cmake' => :build
