@@ -8,6 +8,10 @@ class Soapysdr < Formula
   depends_on "cmake" => :build
   depends_on "swig" => :build
 
+  ### TODO ###
+  #
+  # when 0.3.1 is tagged, pass SOAPY_SDR_ROOT=#{HOMEBREW_PREFIX} and remove this patch...
+  #
   #This patch forces SoapySDR to search the /usr/local prefix for modules.
   #This patch is needed because the CMAKE_INSTALL_PREFIX is not /usr/local.
   #Another solution would be to set SOAPY_SDR_ROOT environment variable.
