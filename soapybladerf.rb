@@ -7,7 +7,7 @@ class Soapybladerf < Formula
 
   depends_on "cmake" => :build
   depends_on "soapysdr"
-  depends_on "bladerf"
+  depends_on "libbladerf"
 
   def install
     mkdir "build" do
