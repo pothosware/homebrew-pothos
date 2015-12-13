@@ -30,7 +30,6 @@ class Pothos < Formula
   def install
     mkdir "build" do
       args = %W[
-        -DENABLE_JAVA=OFF
         -DPOTHOS_ROOT='#{HOMEBREW_PREFIX}'
       ] + std_cmake_args
       system "cmake", "..", *args
