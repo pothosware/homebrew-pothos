@@ -6,6 +6,7 @@ class Pothos < Formula
   depends_on "cmake" => :build
   depends_on "poco"
   depends_on "spuce"
+  depends_on "muparserx"
   depends_on "pothosserialization"
 
   #Audio support toolkit
