@@ -1,7 +1,7 @@
 class Muparserx < Formula
   desc "the muparserx math parser library"
   homepage "http://articles.beltoforion.de/article.php?a=muparserx"
-  head "https://github.com/pothosware/muparserx.git"
+  head "https://github.com/beltoforion/muparserx.git"
 
   depends_on "cmake" => :build
 
