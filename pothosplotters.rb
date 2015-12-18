@@ -17,6 +17,10 @@ class Pothosplotters < Formula
   depends_on "qwtqt5" => :optional
 
   def install
+    #clone internal qwt for tarballs only when qwtqt5 is not present
+    if (build.without? "qwtqt5") and !(build.head?)
+      system "git", "clone", "--branch", "tags/qwt-6.1.2", "https://github.com/osakared/qwt.git", "qwt-6.1.2"
+    end
     mkdir "build" do
       system "cmake", "..", *std_cmake_args
       system "make", "install"
