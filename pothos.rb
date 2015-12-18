@@ -10,6 +10,9 @@ class Pothos < Formula
   depends_on "muparserx"
   depends_on "pothosserialization"
 
+  #FIXME requires spuce for main library build until 0.3.1
+  depends_on "spuce"
+
   def install
     mkdir "build" do
       args = %W[
