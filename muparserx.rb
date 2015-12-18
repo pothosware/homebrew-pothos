@@ -6,7 +6,7 @@ class Muparserx < Formula
   depends_on "cmake" => :build
 
   def install
-    mkdir "build" do
+    mkdir "builddir" do
       system "cmake", "..", *std_cmake_args
       system "make", "install"
     end
