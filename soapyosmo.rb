@@ -2,8 +2,8 @@ class Soapyosmo < Formula
   desc "Soapy SDR plugins for OsmoSDR devices"
   homepage "https://github.com/pothosware/SoapyOsmo/wiki"
   head "https://github.com/pothosware/SoapyOsmo.git"
-  url "https://github.com/pothosware/SoapyOsmo/archive/soapy-osmo-0.2.1.tar.gz"
-  sha256 "77603fc3831c47a1afed2264687cbfd9673f1db4682c724c896358561d5b6ba8"
+  url "https://github.com/pothosware/SoapyOsmo/archive/soapy-osmo-0.2.2.tar.gz"
+  sha256 "0edf3c56177c403190fcc9f47926cb80c2051cbf10de52be2608731a6991e548"
 
   depends_on "cmake" => :build
   depends_on "soapysdr"
