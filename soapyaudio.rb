@@ -5,7 +5,7 @@ class Soapyaudio < Formula
 
   depends_on "cmake" => :build
   depends_on "soapysdr"
-  depends_on "rt-audio"
+  #depends_on "rt-audio" #included in SoapyAudio source
 
   def install
     mkdir "build" do
