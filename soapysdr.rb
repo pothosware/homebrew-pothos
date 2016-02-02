@@ -8,6 +8,8 @@ class Soapysdr < Formula
   depends_on "cmake" => :build
   depends_on "swig" => :build
 
+  patch :DATA
+
   def install
     mkdir "build" do
       args = %W[
@@ -18,3 +20,18 @@ class Soapysdr < Formula
     end
   end
 end
+
+__END__
+diff --git a/cmake/SoapySDRUtil.cmake b/cmake/SoapySDRUtil.cmake
+index ccd8886..2be35cc 100644
+--- a/cmake/SoapySDRUtil.cmake
++++ b/cmake/SoapySDRUtil.cmake
+@@ -44,7 +44,7 @@ function(SOAPY_SDR_MODULE_UTIL)
+ 
+     install(
+         TARGETS ${MODULE_TARGET}
+-        DESTINATION ${MODULE_PREFIX}/lib${LIB_SUFFIX}/SoapySDR/modules/
++        DESTINATION lib${LIB_SUFFIX}/SoapySDR/modules/
+     )
+ 
+ endfunction(SOAPY_SDR_MODULE_UTIL)
