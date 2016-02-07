@@ -10,7 +10,7 @@ class Pothos < Formula
   depends_on "muparserx"
   depends_on "pothosserialization"
 
-  #FIXME requires spuce for main library build until 0.3.1
+  #FIXME requires spuce for main library build until 0.3.2
   depends_on "spuce"
 
   patch :DATA
@@ -19,6 +19,10 @@ class Pothos < Formula
     mkdir "build" do
       args = %W[
         -DPOTHOS_ROOT='#{HOMEBREW_PREFIX}'
+        -DENABLE_INTERNAL_POCO=OFF
+        -DENABLE_INTERNAL_SPUCE=OFF
+        -DENABLE_INTERNAL_MUPARSERX=OFF
+        -DENABLE_INTERNAL_SERIALIZATION=OFF
         -DENABLE_TOOLKITS=OFF
       ] + std_cmake_args
       system "cmake", "..", *args
