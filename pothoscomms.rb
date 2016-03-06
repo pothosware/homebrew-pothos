@@ -2,8 +2,8 @@ class Pothoscomms < Formula
   desc "Pothos communications blocks"
   homepage "https://github.com/pothosware/pothos-comms/wiki"
   head "https://github.com/pothosware/pothos-comms.git"
-  url "https://github.com/pothosware/pothos-comms/archive/pothos-comms-0.1.2.tar.gz"
-  sha256 "e32e4e1d7b0824ea257963c52114fe051d5f496de60174b6cf02198978513221"
+  url "https://github.com/pothosware/pothos-comms/archive/pothos-comms-0.1.3.tar.gz"
+  sha256 "150813c0af663f044f411e785a50b547cac070d8c227544ad230aaf96340d0f5"
 
   depends_on "cmake" => :build
   depends_on "pothos"
