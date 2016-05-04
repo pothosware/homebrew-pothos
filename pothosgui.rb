@@ -2,8 +2,8 @@ class Pothosgui < Formula
   desc "Pothos graphical design tool"
   homepage "https://github.com/pothosware/pothos-gui/wiki"
   head "https://github.com/pothosware/pothos-gui.git"
-  url "https://github.com/pothosware/pothos-gui/archive/pothos-gui-0.3.1.tar.gz"
-  sha256 "947c4742c81b01e787c98abe1ddcc85964fbe1b77829875641ced5ee127ec80f"
+  url "https://github.com/pothosware/pothos-gui/archive/pothos-gui-0.3.2.tar.gz"
+  sha256 "d2550949bb3e090f4128ad6598044ed0f41849ada3e71ba732a5452dc426a496"
 
   depends_on "cmake" => :build
   depends_on "pothos"
