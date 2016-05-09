@@ -8,7 +8,7 @@ class Pothoscomms < Formula
   depends_on "cmake" => :build
   depends_on "pothos"
   depends_on "poco"
-  depends_on "spuce"
+  depends_on "audiofilter/spuc/spuce"
 
   def install
     mkdir "build" do
