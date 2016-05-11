@@ -11,15 +11,24 @@ class Pothos < Formula
   depends_on "pothosserialization"
 
   def install
+
+    args = []
+
+    if !(build.head?)
+      args += ["-DPOTHOS_EXTVER=release"]
+    end
+
+    args += %W[
+      -DPOTHOS_ROOT='#{HOMEBREW_PREFIX}'
+      -DENABLE_INTERNAL_POCO=OFF
+      -DENABLE_INTERNAL_SPUCE=OFF
+      -DENABLE_INTERNAL_MUPARSERX=OFF
+      -DENABLE_INTERNAL_SERIALIZATION=OFF
+      -DENABLE_TOOLKITS=OFF
+    ]
+
     mkdir "build" do
-      args = %W[
-        -DPOTHOS_ROOT='#{HOMEBREW_PREFIX}'
-        -DENABLE_INTERNAL_POCO=OFF
-        -DENABLE_INTERNAL_SPUCE=OFF
-        -DENABLE_INTERNAL_MUPARSERX=OFF
-        -DENABLE_INTERNAL_SERIALIZATION=OFF
-        -DENABLE_TOOLKITS=OFF
-      ] + std_cmake_args
+      args += std_cmake_args
       system "cmake", "..", *args
       system "make", "install"
     end

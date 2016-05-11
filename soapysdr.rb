@@ -19,6 +19,10 @@ class Soapysdr < Formula
       args += ["-DENABLE_PYTHON3=OFF"]
     end
 
+    if !(build.head?)
+      args += ["-DSOAPY_SDR_EXTVER=release"]
+    end
+
     args += %W[-DSOAPY_SDR_ROOT='#{HOMEBREW_PREFIX}']
 
     mkdir "build" do
