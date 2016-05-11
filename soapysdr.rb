@@ -7,12 +7,22 @@ class Soapysdr < Formula
 
   depends_on "cmake" => :build
   depends_on "swig" => :build
+  depends_on "python3" => :optional
 
   def install
+
+    args = []
+
+    if build.with?("python3")
+      args += ["-DENABLE_PYTHON3=ON"]
+    else
+      args += ["-DENABLE_PYTHON3=OFF"]
+    end
+
+    args += %W[-DSOAPY_SDR_ROOT='#{HOMEBREW_PREFIX}']
+
     mkdir "build" do
-      args = %W[
-        -DSOAPY_SDR_ROOT='#{HOMEBREW_PREFIX}'
-      ] + std_cmake_args
+      args += std_cmake_args
       system "cmake", "..", *args
       system "make", "install"
     end
