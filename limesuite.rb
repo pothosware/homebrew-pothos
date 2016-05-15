@@ -34,7 +34,7 @@ class Limesuite < Formula
 
     mkdir "builddir" do
       args += std_cmake_args
-      system "cmake", "../src/", *args
+      system "cmake", "..", *args
       system "make", "install"
     end
   end
