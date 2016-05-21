@@ -4,6 +4,7 @@ class Limesuite < Formula
   head "https://github.com/myriadrf/LimeSuite.git"
 
   depends_on "cmake" => :build
+  depends_on "sqlite" #core library dependency
   depends_on "libusb" => :recommended
   depends_on "wxwidgets" => :recommended
   depends_on "soapysdr" => :recommended
