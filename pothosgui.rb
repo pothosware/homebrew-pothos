@@ -14,8 +14,16 @@ class Pothosgui < Formula
   depends_on "graphviz" => :recommended
 
   def install
+
+    args = []
+
+    #use the install prefix bundle destination
+    #so brew linkapps can automatically see it
+    args += ["-DBUNDLE_DESTINATION=."]
+
     mkdir "build" do
-      system "cmake", "..", *std_cmake_args
+      args += std_cmake_args
+      system "cmake", "..", *args
       system "make", "install"
     end
   end
