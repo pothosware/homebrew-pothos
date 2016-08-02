@@ -2,8 +2,8 @@ class Pothospython < Formula
   desc "Pothos language bindings for Python"
   homepage "https://github.com/pothosware/pothos-python/wiki"
   head "https://github.com/pothosware/pothos-python.git"
-  url "https://github.com/pothosware/pothos-python/archive/pothos-python-0.1.4.tar.gz"
-  sha256 "df4863194171d39dec320018cf27c45ae40d8b877f2915440e38d822e2ed4d7e"
+  url "https://github.com/pothosware/pothos-python/archive/pothos-python-0.2.0.tar.gz"
+  sha256 "3fd8619f8db0f4b1e3bdf8f07ce2907258112a71232914ca10055bdfecec6df7"
 
   depends_on "cmake" => :build
   depends_on "pothos"

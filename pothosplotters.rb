@@ -2,8 +2,8 @@ class Pothosplotters < Formula
   desc "Pothos graphical plotter widgets"
   homepage "https://github.com/pothosware/pothos-plotters/wiki"
   head "https://github.com/pothosware/pothos-plotters.git"
-  url "https://github.com/pothosware/pothos-plotters/archive/pothos-plotters-0.1.1.tar.gz"
-  sha256 "dd13219d0985d54db5517b4a1e8a45551d3e0d54c913198366b4844e4a5938f4"
+  url "https://github.com/pothosware/pothos-plotters/archive/pothos-plotters-0.2.0.tar.gz"
+  sha256 "eff420cbd872e457df6a50a8c7b2f04a38df3488b2d6d0feeb2c6e953aa6b1c8"
 
   depends_on "cmake" => :build
   depends_on "pothos"
