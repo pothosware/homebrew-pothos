@@ -8,10 +8,25 @@ class Pothospython < Formula
   depends_on "cmake" => :build
   depends_on "pothos"
   depends_on "poco"
+  depends_on "python3" => :optional
 
   def install
+
+    args = []
+
+    args += ["-DUSE_PYTHON_CONFIG=ON"]
+
+    #using --with-python3 to build bindings for python3
+    #its always one or the other, we cant build for both
+    if build.with?("python3")
+      args += ["-DPython_ADDITIONAL_VERSIONS=3"]
+    else
+      args += ["-DPython_ADDITIONAL_VERSIONS=2"]
+    end
+
     mkdir "build" do
-      system "cmake", "..", *std_cmake_args
+      args += std_cmake_args
+      system "cmake", "..", *args
       system "make", "install"
     end
   end
