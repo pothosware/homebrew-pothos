@@ -7,6 +7,7 @@ class Pothosplotters < Formula
 
   depends_on "cmake" => :build
   depends_on "pothos"
+  depends_on "pothoscomms"
   depends_on "audiofilter/spuc/spuce"
   depends_on "qt5"
 
