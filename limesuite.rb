@@ -8,9 +8,16 @@ class Limesuite < Formula
   depends_on "libusb" => :recommended
   depends_on "wxwidgets" => :recommended
   depends_on "soapysdr" => :recommended
+  option "with-images", "Download and install firmware/gatware images"
 
   def install
     args = []
+
+    if build.with?("images")
+      args += ["-DDOWNLOAD_IMAGES=TRUE"]
+    else
+      args += ["-DDOWNLOAD_IMAGES=FALSE"]
+    end
 
     if build.with?("libusb")
       args += ["-DENABLE_STREAM=ON"]
@@ -19,9 +26,9 @@ class Limesuite < Formula
     end
 
     if build.with?("wxwidgets")
-      args += ["-DENABLE_LMS7_GUI=ON"]
+      args += ["-DENABLE_GUI=ON"]
     else
-      args += ["-DENABLE_LMS7_GUI=OFF"]
+      args += ["-DENABLE_GUI=OFF"]
     end
 
     #novena is arm linux only
@@ -32,6 +39,12 @@ class Limesuite < Formula
     else
       args += ["-DENABLE_SOAPY_LMS7=OFF"]
     end
+
+    if !(build.head?)
+      args += ["-DLIME_SUITE_EXTVER=release"]
+    end
+
+    args += %W[-DLIME_SUITE_ROOT='#{HOMEBREW_PREFIX}']
 
     mkdir "builddir" do
       args += std_cmake_args
