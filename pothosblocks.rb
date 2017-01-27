@@ -2,8 +2,8 @@ class Pothosblocks < Formula
   desc "Pothos core processing blocks"
   homepage "https://github.com/pothosware/pothos-blocks/wiki"
   head "https://github.com/pothosware/pothos-blocks.git"
-  url "https://github.com/pothosware/pothos-blocks/archive/pothos-blocks-0.4.1.tar.gz"
-  sha256 "05fc4c0c6876bb34869b49db0d882d52d3513d232ac475ba0de1156d8e1d0cc5"
+  url "https://github.com/pothosware/pothos-blocks/archive/pothos-blocks-0.4.2.tar.gz"
+  sha256 "0f2fb64156fc1017a339f63648252294391ce3018fc78a19be27fe4f67564d48"
 
   depends_on "cmake" => :build
   depends_on "pothos"

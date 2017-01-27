@@ -2,8 +2,8 @@ class Pothoswidgets < Formula
   desc "Pothos graphical control widgets"
   homepage "https://github.com/pothosware/pothos-widgets/wiki"
   head "https://github.com/pothosware/pothos-widgets.git"
-  url "https://github.com/pothosware/pothos-widgets/archive/pothos-widgets-0.4.0.tar.gz"
-  sha256 "b9e175a82379fb9794392a783da9882a61f6f68bc57049f11149c2a6041dc526"
+  url "https://github.com/pothosware/pothos-widgets/archive/pothos-widgets-0.4.1.tar.gz"
+  sha256 "63a020793c9bfa01fdc8bedbcb56dc98113225204ebc623550bde29ce55092b7"
 
   depends_on "cmake" => :build
   depends_on "pothos"
