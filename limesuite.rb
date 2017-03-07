@@ -2,8 +2,8 @@ class Limesuite < Formula
   desc "Lime suite device drivers, GUI, and SDR support"
   homepage "https://github.com/myriadrf/LimeSuite/blob/master/README.md"
   head "https://github.com/myriadrf/LimeSuite.git"
-  url "https://github.com/myriadrf/LimeSuite/archive/v17.01.1.tar.gz"
-  sha256 "e122a059197448074d23a4b4699df22d4746ef05f6ac1d1741577208827c3b30"
+  url "https://github.com/myriadrf/LimeSuite/archive/v17.02.0.tar.gz"
+  sha256 "69de5567ddc584b201c509f7a755ea218b45b689a29b75ff392d7d03fdd25e79"
 
   depends_on "cmake" => :build
   depends_on "sqlite" #core library dependency
