@@ -8,6 +8,7 @@ class Pothospython < Formula
   depends_on "cmake" => :build
   depends_on "pothos"
   depends_on "poco"
+  depends_on "python" => :recommended
   depends_on "python3" => :optional
 
   def install
