@@ -2,8 +2,8 @@ class Soapyairspy < Formula
   desc "Soapy SDR plugins for Airspy"
   homepage "https://github.com/pothosware/SoapyAirspy/wiki"
   head "https://github.com/pothosware/SoapyAirspy.git"
-  url "https://github.com/pothosware/SoapyAirspy/archive/soapy-airspy-0.1.0.tar.gz"
-  sha256 "83e6318a0735eefd6383bc0606bf87188cf03219e688ced6b0c79c312775fab4"
+  url "https://github.com/pothosware/SoapyAirspy/archive/soapy-airspy-0.1.1.tar.gz"
+  sha256 "21277c22aad441ce11be011d6f05383ba9d5192818151270566b1dacc670e1d5"
 
   depends_on "cmake" => :build
   depends_on "soapysdr"
