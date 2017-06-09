@@ -2,8 +2,8 @@ class Soapyremote < Formula
   desc "Use any Soapy SDR remotely"
   homepage "https://github.com/pothosware/SoapyRemote/wiki"
   head "https://github.com/pothosware/SoapyRemote.git"
-  url "https://github.com/pothosware/SoapyRemote/archive/soapy-remote-0.4.0.tar.gz"
-  sha256 "4f34a20004b4721c60aeb9d301962282b48781b4eb69f6a3ca3baf0b6066f016"
+  url "https://github.com/pothosware/SoapyRemote/archive/soapy-remote-0.4.1.tar.gz"
+  sha256 "ea83cdfb4c8eb4dadc222e98138c91e3df543ec8b65958b8131f516574924403"
 
   depends_on "cmake" => :build
   depends_on "soapysdr"
