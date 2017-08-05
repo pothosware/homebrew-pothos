@@ -8,6 +8,7 @@ class Pothosblocks < Formula
   depends_on "cmake" => :build
   depends_on "pothos"
   depends_on "poco"
+  depends_on "nlohmann/json/nlohmann_json"
 
   def install
     mkdir "build" do
