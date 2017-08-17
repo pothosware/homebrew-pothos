@@ -2,8 +2,8 @@ class Pothos < Formula
   desc "Pothos data-flow software suite"
   homepage "https://github.com/pothosware/pothos/wiki"
   head "https://github.com/pothosware/pothos.git"
-  url "https://github.com/pothosware/pothos/archive/pothos-0.5.0.tar.gz"
-  sha256 "c1dea4228367e4bc46352dca8bf166caca25e411733fe3dc97f94b2c651ebc01"
+  url "https://github.com/pothosware/pothos/archive/pothos-0.5.1.tar.gz"
+  sha256 "e888978c62e71822940c928ce2db1d50e5d2efc1c11a41768ade997d5e9789bc"
 
   depends_on "cmake" => :build
   depends_on "poco"
