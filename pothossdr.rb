@@ -1,9 +1,9 @@
 class Pothossdr < Formula
   desc "Pothos SDR source and sink blocks"
-  homepage "https://github.com/pothosware/pothos-sdr/wiki"
-  head "https://github.com/pothosware/pothos-sdr.git"
-  url "https://github.com/pothosware/pothos-sdr/archive/pothos-sdr-0.4.4.tar.gz"
-  sha256 "cd6e15b8025c984c0463c1620a942bc35bca2e813113dda3bf2a116bed7afeb9"
+  homepage "https://github.com/pothosware/PothosSoapy/wiki"
+  head "https://github.com/pothosware/PothosSoapy.git"
+  url "https://github.com/pothosware/PothosSoapy/archive/pothos-sdr-0.4.4.tar.gz"
+  sha256 "f889a3ee9c76e1838924db0dfa6cd90ab1a10945623c36a394d8008f55484d88"
 
   depends_on "cmake" => :build
   depends_on "pothos"
