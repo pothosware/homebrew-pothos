@@ -11,8 +11,13 @@ class Soapyuhd < Formula
   depends_on "uhd"
 
   def install
+
+    args = []
+    args += %W[-DUHD_ROOT='.']
+
     mkdir "build" do
-      system "cmake", "..", *std_cmake_args
+      args += std_cmake_args
+      system "cmake", "..", *args
       system "make", "install"
     end
   end
