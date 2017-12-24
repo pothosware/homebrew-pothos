@@ -9,7 +9,7 @@ class Pothoscomms < Formula
   depends_on "pothos"
   depends_on "poco"
   depends_on "nlohmann/json/nlohmann_json"
-  depends_on "spuce"
+  depends_on "pothosware/pothos/spuce"
 
   def install
     mkdir "build" do

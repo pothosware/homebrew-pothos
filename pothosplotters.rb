@@ -8,7 +8,7 @@ class Pothosplotters < Formula
   depends_on "cmake" => :build
   depends_on "pothos"
   depends_on "pothoscomms"
-  depends_on "spuce"
+  depends_on "pothosware/pothos/spuce"
   depends_on "qt5"
 
   #Qwt is used for the graphical plotter blocks.
