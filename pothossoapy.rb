@@ -1,4 +1,4 @@
-class Pothossdr < Formula
+class Pothossoapy < Formula
   desc "Pothos SDR source and sink blocks"
   homepage "https://github.com/pothosware/PothosSoapy/wiki"
   head "https://github.com/pothosware/PothosSoapy.git"

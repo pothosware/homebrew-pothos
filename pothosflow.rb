@@ -1,4 +1,4 @@
-class Pothosgui < Formula
+class Pothosflow < Formula
   desc "Pothos graphical design tool"
   homepage "https://github.com/pothosware/PothosFlow/wiki"
   head "https://github.com/pothosware/PothosFlow.git"
