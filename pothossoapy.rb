@@ -8,6 +8,7 @@ class Pothossoapy < Formula
   depends_on "cmake" => :build
   depends_on "pothos"
   depends_on "poco"
+  depends_on "nlohmann/json/nlohmann_json"
   depends_on "soapysdr"
 
   def install
