@@ -2,8 +2,8 @@ class Soapybladerf < Formula
   desc "Soapy SDR plugin for Blade RF"
   homepage "https://github.com/pothosware/SoapyBladeRF/wiki"
   head "https://github.com/pothosware/SoapyBladeRF.git"
-  url "https://github.com/pothosware/SoapyBladeRF/archive/soapy-bladerf-0.3.3.tar.gz"
-  sha256 "5c80c946d9f6ce1120682c87b449a09032e0abddc960af5b0ee16def08fe5ad9"
+  url "https://github.com/pothosware/SoapyBladeRF/archive/soapy-bladerf-0.3.4.tar.gz"
+  sha256 "24b132a365265a0534cbe1bc73c0d9f13b8debc01d9e69a5278c6cdd291f9f59"
 
   depends_on "cmake" => :build
   depends_on "soapysdr"
