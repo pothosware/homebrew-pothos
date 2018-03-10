@@ -4,6 +4,7 @@ class Pothosliquiddsp < Formula
   head "https://github.com/pothosware/PothosLiquidDSP.git"
 
   depends_on "cmake" => :build
+  depends_on "python3" => :build
   depends_on "liquid-dsp" => :build
   depends_on "pothos"
 
@@ -22,18 +23,17 @@ class Pothosliquiddsp < Formula
     sha256 "4e02fde57bd4abb5ec400181e4c314f56ac3e49ba4fb8b0d50bba18cb27d25ae"
   end
 
-
   def install
 
     args = []
 
-    args += ["-DPYTHON_EXECUTABLE=/usr/bin/python2.7"]
+    args += ["-DPYTHON_EXECUTABLE=#{HOMEBREW_PREFIX}/bin/python3"]
 
-    ENV.prepend_create_path "PYTHONPATH", libexec/"vendor/lib/python2.7/site-packages"
+    ENV.prepend_create_path "PYTHONPATH", libexec/"vendor/lib/python3.6/site-packages"
     res = %w[ply pyyaml mako]
     res.each do |r|
       resource(r).stage do
-        system "python2.7", *Language::Python.setup_install_args(libexec/"vendor")
+        system "#{HOMEBREW_PREFIX}/bin/python3", *Language::Python.setup_install_args(libexec/"vendor")
       end
     end
     mkdir "build" do
