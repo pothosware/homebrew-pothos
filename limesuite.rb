@@ -2,7 +2,7 @@ class Limesuite < Formula
   desc "Lime suite device drivers, GUI, and SDR support"
   homepage "https://github.com/myriadrf/LimeSuite/blob/master/README.md"
   head "https://github.com/myriadrf/LimeSuite.git"
-  url "https://github.com/myriadrf/LimeSuite/archive/v17.12.0.tar.gz"
+  url "https://github.com/myriadrf/LimeSuite/archive/v18.03.0.tar.gz"
   sha256 "268a517d827c40d4879c2ea945eebee58c59caab061b2e9ff501e6f2676e2a3a"
 
   depends_on "cmake" => :build
