@@ -14,7 +14,12 @@ class Soapysdr < Formula
 
     args = []
 
-    args += ["-DUSE_PYTHON_CONFIG=ON"]
+    if build.with?("python")
+        args += ["-DENABLE_PYTHON=ON"]
+        args += ["-DUSE_PYTHON_CONFIG=ON"]
+    else
+        args += ["-DENABLE_PYTHON=OFF"]
+    end
 
     if build.with?("python3")
       args += ["-DENABLE_PYTHON3=ON"]
