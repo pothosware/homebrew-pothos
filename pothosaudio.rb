@@ -2,8 +2,8 @@ class Pothosaudio < Formula
   desc "Pothos audio source and sink blocks"
   homepage "https://github.com/pothosware/PothosAudio/wiki"
   head "https://github.com/pothosware/PothosAudio.git"
-  url "https://github.com/pothosware/PothosAudio/archive/pothos-audio-0.3.0.tar.gz"
-  sha256 "4c7462fb25d2b9c168444d0e450ff2843609598b4227691e06fe120d6f6db22d"
+  url "https://github.com/pothosware/PothosAudio/archive/pothos-audio-0.3.1.tar.gz"
+  sha256 "aa36aaa1116515e4634fa29d585df2b847f2238d3c4eb29375bb4a82de9a7d4a"
 
   depends_on "cmake" => :build
   depends_on "pothos"
