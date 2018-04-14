@@ -7,7 +7,7 @@ class Soapysdr < Formula
 
   depends_on "cmake" => :build
   depends_on "swig" => :build
-  depends_on "python" => :recommended
+  depends_on "python2" => :recommended
   depends_on "python3" => :optional
 
   def install
