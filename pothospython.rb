@@ -9,8 +9,8 @@ class Pothospython < Formula
   depends_on "pothos"
   depends_on "poco"
   depends_on "nlohmann/json/nlohmann_json"
-  depends_on "python2" => :recommended
-  depends_on "python3" => :optional
+  depends_on "python2" => :optional
+  depends_on "python3" => :recommended
 
   def install
 
