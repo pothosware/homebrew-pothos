@@ -13,7 +13,7 @@ class Libad9361 < Formula
     libiio = Formulary.factory 'libiio'
 
     mktemp do
-      if not build.head?
+      if !(build.head?)
         inreplace  buildpath/"CMakeLists.txt",
                    "include(FindGit OPTIONAL)",
                    "SET(FindGit)"
