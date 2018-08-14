@@ -8,20 +8,20 @@ class Soapysdr < Formula
   depends_on "cmake" => :build
   depends_on "swig" => :build
   depends_on "python2" => :optional
-  depends_on "python3" => :recommended
+  depends_on "python" => :recommended
 
   def install
 
     args = []
 
-    if build.with?("python")
+    if build.with?("python2")
         args += ["-DENABLE_PYTHON=ON"]
         args += ["-DUSE_PYTHON_CONFIG=ON"]
     else
         args += ["-DENABLE_PYTHON=OFF"]
     end
 
-    if build.with?("python3")
+    if build.with?("python")
       args += ["-DENABLE_PYTHON3=ON"]
     else
       args += ["-DENABLE_PYTHON3=OFF"]
