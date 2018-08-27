@@ -1,7 +1,7 @@
 class Soapyplutosdr < Formula
   desc "Soapy SDR plugin for PlutoSDR."
-  homepage "https://github.com/jocover/SoapyPlutoSDR"
-  head "https://github.com/jocover/SoapyPlutoSDR.git"
+  homepage "https://github.com/pothosware/SoapyPlutoSDR"
+  head "https://github.com/pothosware/SoapyPlutoSDR.git"
 
   depends_on "soapysdr"
   depends_on "cmake" => :build
