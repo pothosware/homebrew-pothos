@@ -2,8 +2,8 @@ class Soapyuhd < Formula
   desc "Soapy SDR plugins for UHD devices"
   homepage "https://github.com/pothosware/SoapyUHD/wiki"
   head "https://github.com/pothosware/SoapyUHD.git"
-  url "https://github.com/pothosware/SoapyUHD/archive/soapy-uhd-0.3.4.tar.gz"
-  sha256 "7b7f2bc9a565f42b6e9b0831db942a5231fd048c79976fb2d1f1710efef83dd0"
+  url "https://github.com/pothosware/SoapyUHD/archive/soapy-uhd-0.3.5.tar.gz"
+  sha256 "824911253da0cdadd84481d4d98c6124c71431b69774bc6b138ddbdae0e6182b"
 
   depends_on "cmake" => :build
   depends_on "soapysdr"
