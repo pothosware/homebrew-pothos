@@ -2,8 +2,8 @@ class Pothosflow < Formula
   desc "Pothos graphical design tool"
   homepage "https://github.com/pothosware/PothosFlow/wiki"
   head "https://github.com/pothosware/PothosFlow.git"
-  url "https://github.com/pothosware/PothosFlow/archive/pothos-flow-0.6.1.tar.gz"
-  sha256 "a397f4a524fd45e490b008fd2d998ce909b4b1ece2c61412cdc88e0bbe5002ea"
+  url "https://github.com/pothosware/PothosFlow/archive/pothos-flow-0.6.2.tar.gz"
+  sha256 "a526b31917a49acae41dfa4c65685621a09128b2a10a7a764e68112b88f9d0d0"
 
   depends_on "cmake" => :build
   depends_on "pothos"
