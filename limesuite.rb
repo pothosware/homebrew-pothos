@@ -13,7 +13,7 @@ class Limesuite < Formula
   option "with-images", "Download and install firmware/gatware images"
 
   def install
-    args = []
+    args = ["-DENABLE_QUICKTEST=OFF"]
 
     if build.with?("images")
       args += ["-DDOWNLOAD_IMAGES=TRUE"]
