@@ -14,6 +14,7 @@ class Limesuite < Formula
 
   def install
     args = ["-DENABLE_QUICKTEST=OFF"]
+    args += ["-DENABLE_OCTAVE=OFF"]
 
     if build.with?("images")
       args += ["-DDOWNLOAD_IMAGES=TRUE"]
