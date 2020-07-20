@@ -23,6 +23,7 @@ class Soapysdr < Formula
 
     if build.with?("python")
       args += ["-DENABLE_PYTHON3=ON"]
+      args += ["-DCMAKE_MODULE_LINKER_FLAGS_INIT='-undefined dynamic_lookup'"]
     else
       args += ["-DENABLE_PYTHON3=OFF"]
     end
