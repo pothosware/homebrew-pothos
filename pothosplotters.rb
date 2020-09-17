@@ -10,20 +10,17 @@ class Pothosplotters < Formula
   depends_on "pothoscomms"
   depends_on "audiofilter/spuc/spuce"
   depends_on "qt5"
-
-  #Qwt is used for the graphical plotter blocks.
-  #Otherwise Pothos installs Qwt from submodule.
-  #Although its preferable to use external qwt,
-  #it requires a full xcode install to build.
-  depends_on "qwtqt5" => :optional
+  depends_on "qwt"
 
   def install
-    #clone internal qwt for tarballs only when qwtqt5 is not present
-    if (build.without? "qwtqt5") and !(build.head?)
-      system "git", "clone", "--branch", "tags/qwt-6.1.3", "https://github.com/osakared/qwt.git", "qwt6"
-    end
+    args = []
+
+    #start path for qwt headers
+    args += ["-DQWT_INCLUDE_DIR=/usr/local/lib/qwt.framework/Headers"]
+
     mkdir "build" do
-      system "cmake", "..", *std_cmake_args
+      args += std_cmake_args
+      system "cmake", "..", *args
       system "make", "install"
     end
   end
