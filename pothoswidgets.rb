@@ -7,7 +7,7 @@ class Pothoswidgets < Formula
 
   depends_on "cmake" => :build
   depends_on "pothos"
-  depends_on "qt5"
+  depends_on "qt"
 
   def install
     mkdir "build" do
