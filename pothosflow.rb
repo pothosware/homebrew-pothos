@@ -8,7 +8,7 @@ class Pothosflow < Formula
   depends_on "cmake" => :build
   depends_on "pothos"
   depends_on "poco"
-  depends_on "qt"
+  depends_on "qt@5"
 
   #Graphviz optionally used by the GUI
   depends_on "graphviz" => :recommended
