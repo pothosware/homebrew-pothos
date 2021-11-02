@@ -48,6 +48,7 @@ class Limesuite < Formula
     end
 
     args += %W[-DLIME_SUITE_ROOT='#{HOMEBREW_PREFIX}']
+    args += ["-DCMAKE_INSTALL_NAME_DIR=#{lib}"]
 
     mkdir "builddir" do
       args += std_cmake_args
