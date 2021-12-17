@@ -9,7 +9,6 @@ class Pothospython < Formula
   depends_on "pothos"
   depends_on "poco"
   depends_on "nlohmann/json/nlohmann_json"
-  depends_on "python2" => :optional
   depends_on "python" => :recommended
 
   def install
@@ -17,14 +16,7 @@ class Pothospython < Formula
     args = []
 
     args += ["-DUSE_PYTHON_CONFIG=ON"]
-
-    #using --with-python3 to build bindings for python3
-    #its always one or the other, we cant build for both
-    if build.with?("python2")
-      args += ["-DPython_ADDITIONAL_VERSIONS=2"]
-    else
-      args += ["-DPython_ADDITIONAL_VERSIONS=3"]
-    end
+    args += ["-DPython_ADDITIONAL_VERSIONS=3"]
 
     mkdir "build" do
       args += std_cmake_args
