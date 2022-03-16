@@ -1,6 +1,7 @@
 class Pothospython < Formula
   desc "Pothos language bindings for Python"
   homepage "https://github.com/pothosware/PothosPython/wiki"
+  revision 1
   head "https://github.com/pothosware/PothosPython.git"
   url "https://github.com/pothosware/PothosPython/archive/pothos-python-0.4.3.tar.gz"
   sha256 "6086a9988ac86cc1ca96e2082aff426311ad941ad6a7d4d73eef07f9258920ad"
