@@ -1,0 +1,61 @@
+name: Build check
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  macos_build_job:
+    strategy:
+      fail-fast: false
+      matrix:
+        formula:
+          - airspyhf
+          # - grpothos
+          - libad9361
+          - libiio
+          # - libmirisdr
+          # - libosmosdr
+          - limesuite
+          # - muparserx
+          # - pothos
+          # - pothosaudio
+          # - pothosblocks
+          # - pothoscomms
+          # - pothosflow
+          # - pothosliquiddsp
+          # - pothosplotters
+          # - pothospython
+          # - pothossoapy
+          # - pothoswidgets
+          - soapyairspy
+          - soapyairspyhf
+          #- soapyaudio (rtaudio is too new)
+          - soapybladerf
+          - soapyhackrf
+          #- soapyiris
+          - soapynetsdr
+          #- soapyosmo
+          - soapyplutosdr
+          - soapyredpitaya
+          - soapyremote
+          - soapyrtlsdr
+          - soapysdr
+          #- soapyuhd (uhd/utils/log_add_impl.hpp file not found)
+        os: [macos-latest]
+    runs-on: ${{ matrix.os }}
+    name: Build ${{ matrix.formula }} on ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Update brew
+        run: |
+          brew update
+      - name: Setup tap
+        run: |
+          FORMULA_DIR="$(brew --repository)/Library/Taps/pothosware/homebrew-pothos/Formula/"
+          mkdir -p "$FORMULA_DIR"
+          cp *.rb "$FORMULA_DIR"
+          brew trust pothosware/pothos
+      - name: Build formula
+        run: |
+          brew install --verbose pothosware/homebrew-pothos/${{ matrix.formula }}
