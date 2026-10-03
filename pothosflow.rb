@@ -1,6 +1,7 @@
 class Pothosflow < Formula
   desc "Pothos graphical design tool"
   homepage "https://github.com/pothosware/PothosFlow/wiki"
+  revision 1
   head "https://github.com/pothosware/PothosFlow.git"
   url "https://github.com/pothosware/PothosFlow/archive/pothos-flow-0.7.1.tar.gz"
   sha256 "fa3b130f8b9164f7f26bee645cc80f490dfda47bd5efe5242c5f5f3b1c202f87"

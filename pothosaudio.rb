@@ -1,6 +1,7 @@
 class Pothosaudio < Formula
   desc "Pothos audio source and sink blocks"
   homepage "https://github.com/pothosware/PothosAudio/wiki"
+  revision 1
   head "https://github.com/pothosware/PothosAudio.git"
   url "https://github.com/pothosware/PothosAudio/archive/pothos-audio-0.3.1.tar.gz"
   sha256 "aa36aaa1116515e4634fa29d585df2b847f2238d3c4eb29375bb4a82de9a7d4a"
