@@ -2,8 +2,9 @@ class Soapyplutosdr < Formula
   desc "Soapy SDR plugin for PlutoSDR."
   homepage "https://github.com/pothosware/SoapyPlutoSDR"
   head "https://github.com/pothosware/SoapyPlutoSDR.git"
-  url "https://github.com/pothosware/SoapyPlutoSDR/archive/soapy-plutosdr-0.2.1.tar.gz"
-  sha256 "359e3762d98452b5e39078795b8165048e9edc8eb144d7c9bded7e1cc5358d4e"
+  version "0.2.2-13"
+  url "https://github.com/pothosware/SoapyPlutoSDR/archive/6d93ba806e4b2d2e1c5c70c9ba82027b37bdb257.zip"
+  sha256 "ef3cf3837d0db53ec58828bf16223e8dc4b6d1a5b1a82fd3fd99e06cbd03a09d"
 
   depends_on "soapysdr"
   depends_on "cmake" => :build
