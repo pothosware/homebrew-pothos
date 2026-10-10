@@ -2,9 +2,8 @@ class Soapysdr < Formula
   desc "Vendor and platform neutral SDR support library"
   homepage "https://github.com/pothosware/SoapySDR/wiki"
   head "https://github.com/pothosware/SoapySDR.git"
-  version "0.8.1-109"
-  url "https://github.com/pothosware/SoapySDR/archive/1551ea0d39ce546b32a15808b9b1241018a89fc8.zip"
-  sha256 "43ef5cd9ea3eea8fce30b81f175b5ffa7af799b135fe28d3dfe3fd13e5cfe224"
+  url "https://github.com/pothosware/SoapySDR/archive/soapy-sdr-0.9.0.tar.gz"
+  sha256 "64f97c1ad241156fe299acb8902169019eab34517cd580b563968a43d7533509"
 
   depends_on "cmake" => :build
   depends_on "swig" => :build

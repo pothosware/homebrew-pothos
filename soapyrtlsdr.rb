@@ -2,9 +2,8 @@ class Soapyrtlsdr < Formula
   desc "Soapy SDR module for RTL-SDR"
   homepage "https://github.com/pothosware/SoapyRTLSDR/wiki"
   head "https://github.com/pothosware/SoapyRTLSDR.git"
-  version "0.3.3-14"
-  url "https://github.com/pothosware/SoapyRTLSDR/archive/6ca357c15cbf676ff30eb8eb445d1e1eac17c136.zip"
-  sha256 "61c973e6d2d28ead888e8ec0db88c3cd353bf59ecfbf0f284faf0e4cb167d2d3"
+  url "https://github.com/pothosware/SoapyRTLSDR/archive/soapy-rtlsdr-0.3.4.tar.gz"
+  sha256 "1602035b849bca2e9c189712a08d22dc0c7c3a936f9063ac9851bf3229d4460e"
 
   depends_on "cmake" => :build
   depends_on "soapysdr"

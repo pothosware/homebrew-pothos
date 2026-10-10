@@ -2,9 +2,8 @@ class Soapyhackrf < Formula
   desc "Soapy SDR plugin for Hack RF"
   homepage "https://github.com/pothosware/SoapyHackRF/wiki"
   head "https://github.com/pothosware/SoapyHackRF.git"
-  version "0.3.4-9"
-  url "https://github.com/pothosware/SoapyHackRF/archive/8a71ab32f6269708e3a9c96946c071316b959ce4.zip"
-  sha256 "6ad7894e701a2defe405aa767dd9989890461a9d209d1319b022cb6d044494d0"
+  url "https://github.com/pothosware/SoapyHackRF/archive/soapy-hackrf-0.3.5.tar.gz"
+  sha256 "0ef13ac8cf1ec0c0728bdfe8a775e38fd06574418948e3a30ea6794de5d5a06c"
 
   depends_on "cmake" => :build
   depends_on "soapysdr"

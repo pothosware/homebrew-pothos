@@ -2,9 +2,8 @@ class Soapyaudio < Formula
   desc "Soapy SDR plugin for audio devices"
   homepage "https://github.com/pothosware/SoapyAudio/wiki"
   head "https://github.com/pothosware/SoapyAudio.git"
-  version "0.1.1-7"
-  url "https://github.com/pothosware/SoapyAudio/archive/01f7dbbf3365242883b0420ae47946415d49c994.zip"
-  sha256 "e2545a06276f557b4b9d40ac4e9032773347258ea770b4504d54c390c391a16d"
+  url "https://github.com/pothosware/SoapyAudio/archive/soapy-audio-0.1.2.tar.gz"
+  sha256 "61a90aff4131fee6748fb9c4871c5f6af9c7e67954b84a2d7f0ec4fbb08a5347"
 
   depends_on "cmake" => :build
   depends_on "soapysdr"
