@@ -40,6 +40,7 @@ jobs:
           - soapyredpitaya
           - soapyremote
           - soapyrtlsdr
+          - soapyrtltcp
           - soapysdr
           #- soapyuhd (uhd/utils/log_add_impl.hpp file not found)
         os: [macos-latest]
